@@ -74,6 +74,8 @@ Acesse `init_db.php` uma vez após o upload (logado) para verificar/criar as tab
 
 PHP 8.x · SQLite (PDO) · Tailwind CSS (CDN) · Phosphor Icons · Google Books API · Open Library API · Gemini / OpenAI (opcional)
 
-## Licença
+## Autor e licença
 
-Distribuído sob a licença MIT — veja [LICENSE](LICENSE).
+Desenvolvido por **Renato Fiuza**.
+
+Distribuído sob a licença MIT — gratuito para baixar, usar, modificar e distribuir, inclusive para fins comerciais, desde que o aviso de copyright original seja mantido. Veja o texto completo em [LICENSE](LICENSE).
