@@ -1,0 +1,6 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home2/renat583/repositories/livros
+    - /bin/mkdir -p $DEPLOYPATH/data
+    - /bin/chmod 755 $DEPLOYPATH/data
