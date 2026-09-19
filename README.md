@@ -57,6 +57,8 @@ Proteções: rate limit por IP (login, início da recuperação e tentativas de 
 
 ## Deploy na HostGator
 
+Consulte o passo a passo completo em [DEPLOY_HOSTGATOR.md](DEPLOY_HOSTGATOR.md).
+
 1. Envie todos os arquivos para `public_html` ou uma subpasta do site.
 2. Garanta PHP 8.x com extensões `pdo_sqlite` e `openssl` ou `curl` habilitadas.
 3. A pasta `data/` precisa permitir escrita pelo PHP:
