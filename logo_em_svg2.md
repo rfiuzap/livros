@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <style>
+      .bg { fill: #ffffff; }
+      .stroke-main {
+        stroke: #111111;
+        stroke-width: 6.5;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+      .stroke-sub {
+        stroke: #111111;
+        stroke-width: 5;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+      .fill-white { fill: #ffffff; }
+      .fill-dark { fill: #111111; }
+      .monogram {
+        font-family: 'Georgia', 'Playfair Display', serif;
+        font-size: 28px;
+        font-weight: 700;
+        fill: #111111;
+        text-anchor: middle;
+      }
+    </style>
+  </defs>
+
+  <!-- Fundo Branco Puro -->
+  <rect width="100%" height="100%" class="bg" />
+
+  <!-- Grupo Central do Logo -->
+  <g transform="translate(250, 250)">
+
+    <!-- LIVRO AO FUNDO -->
+
+    <!-- Camadas superiores/traseiras das páginas (abertura superior) -->
+    <path d="M 0,-88 L -48,-115 L -72,-95" class="stroke-sub" fill="none" />
+    <path d="M 0,-88 L 48,-115 L 72,-95" class="stroke-sub" fill="none" />
+
+    <!-- Página Esquerda -->
+    <path d="M 0,-88
+             C -28,-98 -58,-98 -82,-82
+             L -82,65
+             C -58,50 -28,50 0,65
+             Z"
+          class="stroke-main fill-white" />
+
+    <!-- Página Direita -->
+    <path d="M 0,-88
+             C 28,-98 58,-98 82,-82
+             L 82,65
+             C 58,50 28,50 0,65
+             Z"
+          class="stroke-main fill-white" />
+
+    <!-- Vinco Central do Livro -->
+    <line x1="0" y1="-88" x2="0" y2="65" class="stroke-main" />
+
+    <!-- Monograma 'G' gravado na base da página direita -->
+    <text x="46" y="44" class="monogram">G</text>
+
+    <!-- LAÇO INFINITO (Fita contínua em traço duplo) -->
+
+    <!-- Máscara de recorte branca traseira para sobreposição limpa -->
+    <path d="M -95,8
+             C -155,8 -160,70 -105,70
+             C -45,70 -15,-35 48,-35
+             C 98,-35 128,-5 118,34
+             C 106,75 56,72 12,42
+             C -38,12 -72,-48 -112,-48
+             C -148,-48 -145,8 -95,8 Z"
+          fill="none"
+          stroke="#ffffff"
+          stroke-width="20"
+          stroke-linejoin="round" />
+
+    <!-- Trilha externa do laço -->
+    <path d="M -95,8
+             C -155,8 -160,70 -105,70
+             C -45,70 -15,-35 48,-35
+             C 98,-35 128,-5 118,34
+             C 106,75 56,72 12,42
+             C -38,12 -72,-48 -112,-48
+             C -148,-48 -145,8 -95,8 Z"
+          fill="none"
+          class="stroke-main" />
+
+    <!-- Trilha interna do laço paralelo -->
+    <path d="M -95,8
+             C -140,8 -144,55 -105,55
+             C -56,55 -30,-22 48,-22
+             C 86,-22 108,0 102,28
+             C 94,55 60,54 22,30
+             C -28,3 -58,-35 -112,-35
+             C -132,-35 -132,8 -95,8 Z"
+          fill="none"
+          class="stroke-sub" />
+
+    <!-- BALÃO DE AVALIAÇÃO / NOTA COM ESTRELA -->
+    <g transform="translate(118, -42)">
+      <!-- Balão circular com ponta de fala -->
+      <circle cx="0" cy="0" r="21" class="fill-white stroke-main" />
+      <path d="M -9,16 L -17,25 L -2,20 Z" class="fill-dark stroke-main" stroke-width="2" />
+
+      <!-- Estrela centralizada -->
+      <polygon points="0,-10 3,-3 10.5,-2.5 5,2.5 6.5,10 0,6 -6.5,10 -5,2.5 -10.5,-2.5 -3,-3" class="fill-dark" />
+    </g>
+
+  </g>
+</svg>

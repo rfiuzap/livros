@@ -1,0 +1,8 @@
+data/*
+!data/.htaccess
+.env
+.env.*
+!.env.example
+*.log
+Livros.zip
+test_busca.php
